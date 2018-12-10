@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">	
+	<meta name="description" content="Servicios gastronómicos para Azul y alrededores. Realizamos todo tipo de eventos, lunchs, viandas personalizadas, asesoramiento y organización. La mejor calidad y el mayor profesionalismo">
+	<meta name="keywords" content="si, servicio, integral, gastronomia, azul, viandas, eventos, fiesta">
+	<meta name="author" content="ERCIProjects">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimum-scale=1.0">
+	<title>Servicio Integral - Servicios gastronómicos</title>
+	<!--css-->
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<!--font title--><link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+	<!--font body--><link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+</head>
+<body>
+	<div id="pop"></div>
+	<header id="inicio">	
+		<nav>	
+			<ul class="listGrid">
+				<li id="img-home"><a href="#inicio"><img class="logo-principal" src="img/LogoCircle.png" alt="SI-Logo"></a></li>
+				<li id="inicio"><a href="#inicio">Inicio</a></li>
+				<li id="quienessomos"><a href="#weare">Quiénes somos</a></li>
+				<li id="services"><a href="#servicios">Servicios</a></li>
+				<li id="contacto"><a href="#contact">Contacto</a></li>
+			</ul>
+			<ul class="listScroll">
+				<li><a href="#inicio"><img class="logoScroll" src="img/LogoCircle.png" alt="SI-Logo"></a></li>
+				<span class="fas fa-bars burgerMenu"></span>
+				<div class="dropdown" id="dropdown">
+					<li><a href="#inicio">Inicio</a></li>
+					<li><a href="#weare">Quiénes somos</a></li>
+					<li><a href="#servicios">Servicios</a></li>
+					<li><a href="#contact">Contacto</a></li>
+				</div>
+			</ul>
+		</nav>
+	</header>
+	<section id="weare">
+		<div class="redColor">
+			<h1>Quiénes somos</h1>
+			<p>Este emprendimiento surge a fines del año 2016, movidos por la creciente demanda de servicios gastronómicos confiables, integrales y de calidad.<br>Creemos que la Gastronomía es una disciplina que debe hacerse con seriedad, esfuerzo y predisposición, brindándole lo mejor al cliente, para que su jornada sea confortable.<br>Nuestra misión es brindar lo mejor de lo mejor para que cada comensal termine el día completamente satisfecho.<br>Somos Servicio Integral, lo que necesitás para tu fiesta, tu comida y tu paladar.</p>
+		</div>
+	</section>
+	<section id="servicios">
+		<div class="whiteColor slider">
+			<h1>Nuestros servicios</h1>
+			<ul class="slide">
+				<li>
+					<img src="img/lunch5.jpg">
+					<div>
+						<h1>Pedidos</h1>
+						<p>Somos especialistas en lunches. Partimos desde un paquete standard compuesto por variedades de quesos y fiambres, pollo y matambres arrollados, tarteletitas y sandwiches; pero, además, le agregamos (y reemplazamos) lo que vos nos pidas.</p>
+					</div>
+				</li>
+				<li>
+					<img src="img/vianda2.jpg">
+					<div>
+						<h1>Viandas saludables</h1>
+						<p>Ofrecemos un servicio de comida casera para todos los días de la semana, con ingredientes seleccionados y menúes completamente personalizados según las necesidades y las posibilidades de nuestros clientes.</p>
+					</div>
+				</li>
+				<li>
+					<img src="img/evento2.jpg">
+					<div>
+						<h1>Organización de eventos</h1>
+						<p>Gestionamos todo (ABSOLUTAMENTE TODO), para que no tengas que preocuparme de nada y puedas disfrutar la celebración que quieras.<br>¿Todavía no estás seguro de qué serivio contratar o en qué va a consistir tu evento? ¡No importa! Nosotros te asesoramos, SIN CARGO.</p>
+					</div>
+				</li>
+				<li>
+					<img src="img/camarero2.jpg">
+					<div>
+						<h1>Servicio de mozos y cocineros.</h1>
+						<p>Además, independientemente de que nos delegues la organización o no, ofrecemos un servicio profesional y completo de camarería y cocina, con personal altamente calificado y con más de 15 años de experiencia.</p>
+					</div>
+				</li>
+			</ul>
+			<ol class="pagination">
+			</ol>
+		</div>
+	</section>
+	<section id="contact">
+		<div class="redColor" id="formulario">
+			<h1>Dejanos tu mensaje</h1>
+			<form class="form" name="contacto" method='post' action="php/mandarCorreo.php">
+				<div class="form-body">
+					<input class="fields" type="text" name="nombre" id="nom-form" placeholder="Nombre"  required>
+					<input class="fields" type="email" name="email" id="correo-form" placeholder="Correo electrónico" >
+					<input class="fields" type="tel" name="tel" id="tel-form" placeholder="Teléfono"  required>
+					<textarea name="mensaje" id="mensaje" rows="10" maxlength="800" wrap="hard" placeholder="Mensaje" required></textarea>
+					<span id="respuesta"></span>
+				</div>
+				<div class="form-foot">
+					<button id="enviar" name="envio" type="submit">Enviar</button>
+					<button id="reset" name="reset">Reset</button>	
+				</div>
+			</form>
+		</div>
+		<div class="whiteColor">
+			<h1>Contactanos</h1>
+			<span class="fab fa-whatsapp iconosRedes wsp"></span>
+			<span><a href="tel:+542281608750">2281&nbsp;608750</a><br><a href="tel:+542281655241">2281&nbsp;15655241</a></span>
+			<span class="fas fa-phone iconosRedes otherIcons"></span>
+			<span><a href="tel:+542281422595">2281&nbsp;422595</a></span>
+			<span class="far fa-envelope iconosRedes mail"></span>
+			<span><a href="mailto:siserviciointegral@outlook.com">siserviciointegral@outlook.com</a></span>
+			<span class="iconosRedes"><a href="https://www.facebook.com/siintegralservice/" target="_blank"><i class="fab fa-facebook fb"></i></a><a href="https://www.instagram.com/siserviciointegral/" target="_blank"><i class="fab fa-instagram ig"></i></a></span>
+			<span class="popup">Enviar mensaje</span>
+		</div>
+	</section>
+	<span class="fas fa-angle-up" id="subir"></span>
+	<footer class="whiteColor">
+		<span class="iconosRedes"><a href="https://www.facebook.com/siintegralservice/" target="_blank"><i class="fab fa-facebook fb"></i></a><a href="https://www.instagram.com/siserviciointegral/" target="_blank"><i class="fab fa-instagram ig"></i></a></span>
+		<a href="#inicio"><img class="logo-principal" src="img/LogoCircle.png" alt="SI-Logo"></a>
+		<span class="copyright">By <i class="relevancia">ERCIProjects</i><br>Copyright 2018</span>
+	</footer>
+	<!--JavaScript-->
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/ajax.js"></script>
+</body>
+</html>
